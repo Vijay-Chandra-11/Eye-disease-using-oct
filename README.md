@@ -36,8 +36,8 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/your-org/retinal-oct-diagnosis.git
 cd retinal-oct-diagnosis
-pip install -r requirements.txt
 ```
+Run the first cell in the jupyter notebook file for the installation of requirements
 
 ---
 
@@ -95,5 +95,6 @@ This boosts reliability by leveraging the strengths of individual architectures.
 We thank our faculty mentors and peers for their guidance and support in realizing this project.  
 
 > *"AI doesn’t replace doctors — it empowers them to see more clearly."* 🧠
+
 
 
