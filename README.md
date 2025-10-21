@@ -75,12 +75,12 @@ This boosts reliability by leveraging the strengths of individual architectures.
 ---
 
 ## 👨‍💻 Team Members
-| Name |
-|:------|
-| **Dheeraj Chandra** |
-| **Sumith Chandra** |
-| **Venkat Reddy** |
-| **Vijay Chandra** |
+| Name | Role | Responsibilities |
+|:------|:------|:----------------|
+| **Dheeraj Chandra** | Team Lead / Developer | Project design, model implementation, documentation |
+| **Sumith Chandra** | Research & Dataset Engineer | Data preprocessing, augmentation, analysis |
+| **Venkat Reddy** | Model Engineer | CNN architecture design, ensemble tuning |
+| **Vijay Chandra** | Evaluation & Deployment | Metrics evaluation, deployment setup |
 
 ---
 
@@ -95,4 +95,5 @@ This boosts reliability by leveraging the strengths of individual architectures.
 We thank our faculty mentors and peers for their guidance and support in realizing this project.  
 
 > *"AI doesn’t replace doctors — it empowers them to see more clearly."* 🧠
+
 
