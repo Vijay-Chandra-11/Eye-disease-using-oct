@@ -74,33 +74,13 @@ This boosts reliability by leveraging the strengths of individual architectures.
 
 ---
 
-## 💡 Future Work
-- Integrate **Vision Transformers (ViT)** for comparative analysis.  
-- Add **explainability tools** (Grad-CAM) for visual feature interpretation.  
-- Develop a **real-time diagnostic dashboard** for hospitals and clinics.  
-
----
-
 ## 👨‍💻 Team Members
-| Name | Role | Responsibilities |
-|:------|:------|:----------------|
-| **Dheeraj Chandra** | Team Lead / Developer | Project design, model implementation, documentation |
-| **Sumith Chandra** | Research & Dataset Engineer | Data preprocessing, augmentation, analysis |
-| **Venkat Reddy** | Model Engineer | CNN architecture design, ensemble tuning |
-| **Vijay Chandra** | Evaluation & Deployment | Metrics evaluation, deployment setup |
-
----
-
-## 🩸 Citation
-If you use this work, please cite:
-```
-@article{retinaloct2025,
-  title={Deep Learning and OCT Imaging: A Novel Ensemble Approach for Eye Disease Diagnosis},
-  author={V Vijay Chandra and Team},
-  year={2025},
-  journal={Undergraduate Research Project}
-}
-```
+| Name |
+|:------|
+| **Dheeraj Chandra** |
+| **Sumith Chandra** |
+| **Venkat Reddy** |
+| **Vijay Chandra** |
 
 ---
 
@@ -115,3 +95,4 @@ If you use this work, please cite:
 We thank our faculty mentors and peers for their guidance and support in realizing this project.  
 
 > *"AI doesn’t replace doctors — it empowers them to see more clearly."* 🧠
+
