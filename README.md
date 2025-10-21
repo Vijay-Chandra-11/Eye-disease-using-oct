@@ -1,35 +1,40 @@
 # 🩺 Deep Learning for Retinal OCT Disease Classification
 
 ## 📘 Overview
-This project presents a **deep learning-based diagnostic system** for classifying retinal diseases using **Optical Coherence Tomography (OCT)** images. The notebook `retinal_oct_train.ipynb` implements a full pipeline — from data preprocessing to model evaluation — leveraging convolutional neural networks (CNNs) for automated eye disease detection.
+This project is a **team-based research initiative** that leverages **deep learning** to classify retinal diseases using **Optical Coherence Tomography (OCT)** images.  
+Our objective is to enable **early, reliable, and automated detection** of major retinal disorders — helping ophthalmologists diagnose eye diseases faster and more accurately.
 
-The primary goal is **early and accurate detection of retinal disorders** such as *Choroidal Neovascularization (CNV)*, *Diabetic Macular Edema (DME)*, *Drusen*, and *Normal* eyes.
+The project integrates **multiple CNN architectures** through an **ensemble learning framework** to improve overall diagnostic performance and reduce false predictions.
 
 ---
 
 ## 🧩 Key Features
-- ✅ **Data Preprocessing:** Efficient loading, normalization, and augmentation of OCT images.  
-- 🧠 **Model Architectures:** Ensemble of CNN models (e.g., ResNet, VGG, Inception).  
-- ⚙️ **Training Pipeline:** Customizable training with learning rate scheduling and early stopping.  
-- 📈 **Evaluation:** Classification metrics (Accuracy, F1-score, Confusion Matrix).  
-- 💾 **Model Saving:** Automatically stores best-performing weights for reuse or deployment.  
+- 🧠 **Ensemble CNN Models:** Combines ResNet, VGG, and Inception for improved accuracy.  
+- 🧺 **Data Pipeline:** Automated preprocessing, augmentation, and stratified data splitting.  
+- ⚙️ **Training Framework:** Includes adaptive learning rate scheduling and early stopping.  
+- 📊 **Evaluation Suite:** Confusion matrix, accuracy, F1-score, and class-specific metrics.  
+- 💾 **Model Persistence:** Saves best-performing weights automatically for deployment.  
+- 🌐 **Future Ready:** Designed for integration with Flask/Streamlit apps.
 
 ---
 
 ## 📂 Dataset
-The dataset used is the **Retinal OCT Images (Kermany et al.)**, publicly available on [Kaggle](https://www.kaggle.com/paultimothymooney/kermany2018).  
-It contains four categories:
-- `CNV` – Choroidal Neovascularization  
-- `DME` – Diabetic Macular Edema  
-- `DRUSEN` – Drusen deposits  
-- `NORMAL` – Healthy retina images  
+We used the **Retinal OCT Images (Kermany et al.)** dataset, publicly available on [Kaggle](https://www.kaggle.com/paultimothymooney/kermany2018).  
+It consists of the following four classes:
+
+| Class | Description |
+|:------|:-------------|
+| **CNV** | Choroidal Neovascularization |
+| **DME** | Diabetic Macular Edema |
+| **DRUSEN** | Drusen deposits |
+| **NORMAL** | Healthy retina images |
 
 ---
 
 ## ⚙️ Installation
-Clone this repository and install dependencies:
+Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/your-username/retinal-oct-diagnosis.git
+git clone https://github.com/your-org/retinal-oct-diagnosis.git
 cd retinal-oct-diagnosis
 pip install -r requirements.txt
 ```
@@ -49,7 +54,8 @@ python retinal_oct_train.py
 ---
 
 ## 🧪 Model Evaluation
-Typical metrics observed (example values):
+Example performance results:
+
 | Metric | Value |
 |:-------|------:|
 | Accuracy | 98.4% |
@@ -60,19 +66,28 @@ Typical metrics observed (example values):
 ---
 
 ## 🧠 Ensemble Strategy
-This project optionally supports **ensemble learning**, combining predictions from multiple CNN models to enhance robustness and generalization.
-
-Ensemble example:
+The ensemble learning module combines multiple CNN predictions:
 ```python
 final_pred = (resnet_pred + vgg_pred + inception_pred) / 3
 ```
+This boosts reliability by leveraging the strengths of individual architectures.
 
 ---
 
 ## 💡 Future Work
-- Incorporate **Vision Transformers (ViT)** for performance comparison.  
-- Develop a **Flask/Streamlit web interface** for interactive diagnosis.  
-- Integrate **Grad-CAM** for explainability visualization.  
+- Integrate **Vision Transformers (ViT)** for comparative analysis.  
+- Add **explainability tools** (Grad-CAM) for visual feature interpretation.  
+- Develop a **real-time diagnostic dashboard** for hospitals and clinics.  
+
+---
+
+## 👨‍💻 Team Members
+| Name | Role | Responsibilities |
+|:------|:------|:----------------|
+| **Dheeraj Chandra** | Team Lead / Developer | Project design, model implementation, documentation |
+| **Sumith Chandra** | Research & Dataset Engineer | Data preprocessing, augmentation, analysis |
+| **Venkat Reddy** | Model Engineer | CNN architecture design, ensemble tuning |
+| **Vijay Chandra** | Evaluation & Deployment | Metrics evaluation, deployment setup |
 
 ---
 
@@ -81,18 +96,22 @@ If you use this work, please cite:
 ```
 @article{retinaloct2025,
   title={Deep Learning and OCT Imaging: A Novel Ensemble Approach for Eye Disease Diagnosis},
-  author={V Vijay Chandra},
+  author={V Vijay Chandra and Team},
   year={2025},
-  journal={Independent Research Project}
+  journal={Undergraduate Research Project}
 }
 ```
 
 ---
 
-## 👤 Author
-**Vijay Chandra Vinnakota**  
-B.Tech, 3rd Year | AI & ML Enthusiast  
-GitHub: [@your-username](https://github.com/Vijay-Chandra-11)
+## 🏫 Institution
+**Department of Computer Science and Engineering**  
+**B.Tech Program, 3rd Year**  
+**Gokaraju Rangaraju Institute Of Engineering And Technology**  
 
 ---
-> *“Early detection saves vision — empowering AI to see what humans can’t.”*
+
+## ✨ Acknowledgements
+We thank our faculty mentors and peers for their guidance and support in realizing this project.  
+
+> *"AI doesn’t replace doctors — it empowers them to see more clearly."* 🧠
